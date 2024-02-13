@@ -1,23 +1,42 @@
-name: CI
+name: Xcode CI/CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Set up Xcode
-      uses: xcode-actions/setup-xcode@v2
-      with:
-        xcode-version: '12.5' # Specify the Xcode version you need
+      - name: Install dependencies
+        run: |
+          # Example for CocoaPods:
+          pod install
 
-    - name: Build
-      run: |
-        xcodebuild clean build -project ChancyWeatherApp.xcodeproj -scheme ChancyWeatherApp
+          # Example for Carthage:
+          carthage bootstrap --platform ios
+
+      - name: Code formatting (optional)
+        run: |
+          # Example for SwiftFormat:
+          swift format
+
+      - name: Static analysis (optional)
+        run: |
+          # Example for SwiftLint:
+          swiftlint
+
+      - name: Unit testing
+        run: |
+          xcodebuild test -scheme ChancyWeatherAppTests
+
+      - name: UI testing (optional)
+        run: |
+          xcodebuild test -scheme ChancyWeatherAppUITests
+
+      - name: Build
+        run: |
+          xcodebuild build -scheme ChancyWeatherApp
