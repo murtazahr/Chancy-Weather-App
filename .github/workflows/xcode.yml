@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Xcode
+      uses: actions/setup-xcode@v2
+      with:
+        xcode-version: '12.5' # Specify the Xcode version you need
+
+    - name: Build
+      run: |
+        xcodebuild clean build -project ChancyWeatherApp.xcodeproj -scheme ChancyWeatherApp
