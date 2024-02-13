@@ -13,4 +13,4 @@ jobs:
           
       - name: Build
         run: |
-          xcodebuild clean build -project ChancyWeatherApp.xcodeproj -scheme ChancyWeatherApp
+          xcodebuild clean build -allowProvisioningUpdates -project ChancyWeatherApp.xcodeproj -scheme ChancyWeatherApp
