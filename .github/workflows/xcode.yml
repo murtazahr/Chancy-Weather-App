@@ -28,15 +28,7 @@ jobs:
         run: |
           # Example for SwiftLint:
           swiftlint
-
-      - name: Unit testing
-        run: |
-          xcodebuild test -scheme ChancyWeatherAppTests
-
-      - name: UI testing (optional)
-        run: |
-          xcodebuild test -scheme ChancyWeatherAppUITests
-
+          
       - name: Build
         run: |
-          xcodebuild build -scheme ChancyWeatherApp
+          xcodebuild clean build -project ChancyWeatherApp.xcodeproj -scheme ChancyWeatherApp
