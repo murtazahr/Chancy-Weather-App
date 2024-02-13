@@ -11,14 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: |
-          # Example for CocoaPods:
-          pod install
-
-          # Example for Carthage:
-          carthage bootstrap --platform ios
-
       - name: Code formatting (optional)
         run: |
           # Example for SwiftFormat:
