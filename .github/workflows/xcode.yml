@@ -10,16 +10,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: Code formatting (optional)
-        run: |
-          # Example for SwiftFormat:
-          swift format
-
-      - name: Static analysis (optional)
-        run: |
-          # Example for SwiftLint:
-          swiftlint
           
       - name: Build
         run: |
