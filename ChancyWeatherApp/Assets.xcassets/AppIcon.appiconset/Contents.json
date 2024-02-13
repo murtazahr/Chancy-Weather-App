@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "craiyon_184542_icono_para_aplicaci_n_de_clima_con_colores_oscuros_transparent_Craiyon.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5888C1BA2B7BB10400039779 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5888C1B92B7BB10400039779 /* WeatherManager.swift */; };
+		5888C1BC2B7BB57400039779 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5888C1BB2B7BB57400039779 /* WeatherView.swift */; };
+		5888C1BE2B7BB5D200039779 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5888C1BD2B7BB5D200039779 /* ModelData.swift */; };
+		5888C1C22B7BB65F00039779 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5888C1C12B7BB65F00039779 /* weatherData.json */; };
+		5888C1C42B7BB7C400039779 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5888C1C32B7BB7C400039779 /* Extensions.swift */; };
+		5888C1C72B7BD06200039779 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5888C1C62B7BD06200039779 /* WeatherRow.swift */; };
+		58AE5DB12B7BA03B00708758 /* ChancyWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DB02B7BA03B00708758 /* ChancyWeatherAppApp.swift */; };
+		58AE5DB32B7BA03B00708758 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DB22B7BA03B00708758 /* ContentView.swift */; };
+		58AE5DB52B7BA03E00708758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AE5DB42B7BA03E00708758 /* Assets.xcassets */; };
+		58AE5DB82B7BA03E00708758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AE5DB72B7BA03E00708758 /* Preview Assets.xcassets */; };
+		58AE5DC22B7BA03E00708758 /* ChancyWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DC12B7BA03E00708758 /* ChancyWeatherAppTests.swift */; };
+		58AE5DCC2B7BA03E00708758 /* ChancyWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DCB2B7BA03E00708758 /* ChancyWeatherAppUITests.swift */; };
+		58AE5DCE2B7BA03E00708758 /* ChancyWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DCD2B7BA03E00708758 /* ChancyWeatherAppUITestsLaunchTests.swift */; };
+		58AE5DDC2B7BA3C500708758 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DDB2B7BA3C500708758 /* LocationManager.swift */; };
+		58AE5DDF2B7BA4FC00708758 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DDE2B7BA4FC00708758 /* WelcomeView.swift */; };
+		58AE5DE12B7BA7EB00708758 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE5DE02B7BA7EB00708758 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58AE5DBE2B7BA03E00708758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58AE5DA52B7BA03B00708758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AE5DAC2B7BA03B00708758;
+			remoteInfo = ChancyWeatherApp;
+		};
+		58AE5DC82B7BA03E00708758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58AE5DA52B7BA03B00708758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AE5DAC2B7BA03B00708758;
+			remoteInfo = ChancyWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5888C1B92B7BB10400039779 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		5888C1BB2B7BB57400039779 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		5888C1BD2B7BB5D200039779 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		5888C1C12B7BB65F00039779 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		5888C1C32B7BB7C400039779 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5888C1C62B7BD06200039779 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		58AE5DAD2B7BA03B00708758 /* ChancyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChancyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AE5DB02B7BA03B00708758 /* ChancyWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChancyWeatherAppApp.swift; sourceTree = "<group>"; };
+		58AE5DB22B7BA03B00708758 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58AE5DB42B7BA03E00708758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58AE5DB72B7BA03E00708758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58AE5DBD2B7BA03E00708758 /* ChancyWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChancyWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AE5DC12B7BA03E00708758 /* ChancyWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChancyWeatherAppTests.swift; sourceTree = "<group>"; };
+		58AE5DC72B7BA03E00708758 /* ChancyWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChancyWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AE5DCB2B7BA03E00708758 /* ChancyWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChancyWeatherAppUITests.swift; sourceTree = "<group>"; };
+		58AE5DCD2B7BA03E00708758 /* ChancyWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChancyWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58AE5DDB2B7BA3C500708758 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		58AE5DDE2B7BA4FC00708758 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		58AE5DE02B7BA7EB00708758 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58AE5DAA2B7BA03B00708758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DBA2B7BA03E00708758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DC42B7BA03E00708758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5888C1C52B7BD04B00039779 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5888C1C62B7BD06200039779 /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		58AE5DA42B7BA03B00708758 = {
+			isa = PBXGroup;
+			children = (
+				58AE5DAF2B7BA03B00708758 /* ChancyWeatherApp */,
+				58AE5DC02B7BA03E00708758 /* ChancyWeatherAppTests */,
+				58AE5DCA2B7BA03E00708758 /* ChancyWeatherAppUITests */,
+				58AE5DAE2B7BA03B00708758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58AE5DAE2B7BA03B00708758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DAD2B7BA03B00708758 /* ChancyWeatherApp.app */,
+				58AE5DBD2B7BA03E00708758 /* ChancyWeatherAppTests.xctest */,
+				58AE5DC72B7BA03E00708758 /* ChancyWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58AE5DAF2B7BA03B00708758 /* ChancyWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				5888C1C52B7BD04B00039779 /* Components */,
+				58AE5DDD2B7BA4A400708758 /* Views */,
+				58AE5DDA2B7BA39700708758 /* Managers */,
+				58AE5DB02B7BA03B00708758 /* ChancyWeatherAppApp.swift */,
+				58AE5DB42B7BA03E00708758 /* Assets.xcassets */,
+				58AE5DB62B7BA03E00708758 /* Preview Content */,
+				5888C1C32B7BB7C400039779 /* Extensions.swift */,
+			);
+			path = ChancyWeatherApp;
+			sourceTree = "<group>";
+		};
+		58AE5DB62B7BA03E00708758 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DB72B7BA03E00708758 /* Preview Assets.xcassets */,
+				5888C1BD2B7BB5D200039779 /* ModelData.swift */,
+				5888C1C12B7BB65F00039779 /* weatherData.json */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58AE5DC02B7BA03E00708758 /* ChancyWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DC12B7BA03E00708758 /* ChancyWeatherAppTests.swift */,
+			);
+			path = ChancyWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		58AE5DCA2B7BA03E00708758 /* ChancyWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DCB2B7BA03E00708758 /* ChancyWeatherAppUITests.swift */,
+				58AE5DCD2B7BA03E00708758 /* ChancyWeatherAppUITestsLaunchTests.swift */,
+			);
+			path = ChancyWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		58AE5DDA2B7BA39700708758 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DDB2B7BA3C500708758 /* LocationManager.swift */,
+				5888C1B92B7BB10400039779 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		58AE5DDD2B7BA4A400708758 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58AE5DB22B7BA03B00708758 /* ContentView.swift */,
+				58AE5DDE2B7BA4FC00708758 /* WelcomeView.swift */,
+				58AE5DE02B7BA7EB00708758 /* LoadingView.swift */,
+				5888C1BB2B7BB57400039779 /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58AE5DAC2B7BA03B00708758 /* ChancyWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58AE5DD12B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherApp" */;
+			buildPhases = (
+				58AE5DA92B7BA03B00708758 /* Sources */,
+				58AE5DAA2B7BA03B00708758 /* Frameworks */,
+				58AE5DAB2B7BA03B00708758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChancyWeatherApp;
+			productName = ChancyWeatherApp;
+			productReference = 58AE5DAD2B7BA03B00708758 /* ChancyWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58AE5DBC2B7BA03E00708758 /* ChancyWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58AE5DD42B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherAppTests" */;
+			buildPhases = (
+				58AE5DB92B7BA03E00708758 /* Sources */,
+				58AE5DBA2B7BA03E00708758 /* Frameworks */,
+				58AE5DBB2B7BA03E00708758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58AE5DBF2B7BA03E00708758 /* PBXTargetDependency */,
+			);
+			name = ChancyWeatherAppTests;
+			productName = ChancyWeatherAppTests;
+			productReference = 58AE5DBD2B7BA03E00708758 /* ChancyWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58AE5DC62B7BA03E00708758 /* ChancyWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58AE5DD72B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherAppUITests" */;
+			buildPhases = (
+				58AE5DC32B7BA03E00708758 /* Sources */,
+				58AE5DC42B7BA03E00708758 /* Frameworks */,
+				58AE5DC52B7BA03E00708758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58AE5DC92B7BA03E00708758 /* PBXTargetDependency */,
+			);
+			name = ChancyWeatherAppUITests;
+			productName = ChancyWeatherAppUITests;
+			productReference = 58AE5DC72B7BA03E00708758 /* ChancyWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58AE5DA52B7BA03B00708758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					58AE5DAC2B7BA03B00708758 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					58AE5DBC2B7BA03E00708758 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 58AE5DAC2B7BA03B00708758;
+					};
+					58AE5DC62B7BA03E00708758 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 58AE5DAC2B7BA03B00708758;
+					};
+				};
+			};
+			buildConfigurationList = 58AE5DA82B7BA03B00708758 /* Build configuration list for PBXProject "ChancyWeatherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58AE5DA42B7BA03B00708758;
+			productRefGroup = 58AE5DAE2B7BA03B00708758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58AE5DAC2B7BA03B00708758 /* ChancyWeatherApp */,
+				58AE5DBC2B7BA03E00708758 /* ChancyWeatherAppTests */,
+				58AE5DC62B7BA03E00708758 /* ChancyWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58AE5DAB2B7BA03B00708758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AE5DB82B7BA03E00708758 /* Preview Assets.xcassets in Resources */,
+				5888C1C22B7BB65F00039779 /* weatherData.json in Resources */,
+				58AE5DB52B7BA03E00708758 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DBB2B7BA03E00708758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DC52B7BA03E00708758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58AE5DA92B7BA03B00708758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5888C1BA2B7BB10400039779 /* WeatherManager.swift in Sources */,
+				5888C1C42B7BB7C400039779 /* Extensions.swift in Sources */,
+				58AE5DB32B7BA03B00708758 /* ContentView.swift in Sources */,
+				58AE5DB12B7BA03B00708758 /* ChancyWeatherAppApp.swift in Sources */,
+				58AE5DDC2B7BA3C500708758 /* LocationManager.swift in Sources */,
+				5888C1C72B7BD06200039779 /* WeatherRow.swift in Sources */,
+				58AE5DE12B7BA7EB00708758 /* LoadingView.swift in Sources */,
+				5888C1BE2B7BB5D200039779 /* ModelData.swift in Sources */,
+				5888C1BC2B7BB57400039779 /* WeatherView.swift in Sources */,
+				58AE5DDF2B7BA4FC00708758 /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DB92B7BA03E00708758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AE5DC22B7BA03E00708758 /* ChancyWeatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AE5DC32B7BA03E00708758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AE5DCC2B7BA03E00708758 /* ChancyWeatherAppUITests.swift in Sources */,
+				58AE5DCE2B7BA03E00708758 /* ChancyWeatherAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58AE5DBF2B7BA03E00708758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58AE5DAC2B7BA03B00708758 /* ChancyWeatherApp */;
+			targetProxy = 58AE5DBE2B7BA03E00708758 /* PBXContainerItemProxy */;
+		};
+		58AE5DC92B7BA03E00708758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58AE5DAC2B7BA03B00708758 /* ChancyWeatherApp */;
+			targetProxy = 58AE5DC82B7BA03E00708758 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58AE5DCF2B7BA03E00708758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58AE5DD02B7BA03E00708758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58AE5DD22B7BA03E00708758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChancyWeatherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58AE5DD32B7BA03E00708758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChancyWeatherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58AE5DD52B7BA03E00708758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChancyWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChancyWeatherApp";
+			};
+			name = Debug;
+		};
+		58AE5DD62B7BA03E00708758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChancyWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChancyWeatherApp";
+			};
+			name = Release;
+		};
+		58AE5DD82B7BA03E00708758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChancyWeatherApp;
+			};
+			name = Debug;
+		};
+		58AE5DD92B7BA03E00708758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 349DL7M9J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murtazahatim.ChancyWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChancyWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58AE5DA82B7BA03B00708758 /* Build configuration list for PBXProject "ChancyWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58AE5DCF2B7BA03E00708758 /* Debug */,
+				58AE5DD02B7BA03E00708758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58AE5DD12B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58AE5DD22B7BA03E00708758 /* Debug */,
+				58AE5DD32B7BA03E00708758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58AE5DD42B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58AE5DD52B7BA03E00708758 /* Debug */,
+				58AE5DD62B7BA03E00708758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58AE5DD72B7BA03E00708758 /* Build configuration list for PBXNativeTarget "ChancyWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58AE5DD82B7BA03E00708758 /* Debug */,
+				58AE5DD92B7BA03E00708758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58AE5DA52B7BA03B00708758 /* Project object */;
+}
